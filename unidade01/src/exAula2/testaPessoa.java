@@ -1,14 +1,8 @@
-package exAula2;
 
 public class TestaPessoa {
     public static void main(String[] args) {
-        Pessoa p1 = new Pessoa();
-
-        p1.nome = "rafael";
-        p1.idade = 16;
-        p1.altura = 1.70f;
-        
-        p1.status();
-        p1.fazerAniversario();
+        Pessoa p1 = new Pessoa("kuririn", 20, 1.75f);
+        System.out.println(p1);
     }
+    
 }
