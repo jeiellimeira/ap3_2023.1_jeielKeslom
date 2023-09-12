@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+
 // 10104235940
-public class TestaProduto {
+public class TestaCarro {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
         ArrayList<Carro> lista = new ArrayList<Carro>();

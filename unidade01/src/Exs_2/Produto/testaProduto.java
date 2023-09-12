@@ -3,36 +3,34 @@ package exAula2;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class testaProduto {
-public static void main(String[] args) {
-    Scanner leia = new Scanner (System.in);
-    // 10104235940
-    ArrayList <Produto> lista = new ArrayList <Produto>();
-    
+public class TestaProduto {
 
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+        ArrayList<Produto> lista = new ArrayList<>();
 
+        char controle = 's';
 
-    char controle = 's';
-    do {
-        System.out.println("Digite o nome do produto: ");
-        String nome = leia.next();
-        System.out.println("Digite o preço do produto");
-        float preco = leia.nextFloat();
-        System.out.println("digite a quantidade do produto");
-        int quant = leia.nextInt();
+        do {
+            System.out.println("Digite o nome do produto: ");
+            String nome = leia.next();
+            System.out.println("Digite o preço do produto: ");
+            float preco = leia.nextFloat();
+            System.out.println("Digite a quantidade do produto: ");
+            int quant = leia.nextInt();
 
-        Produto p = new Produto(nome, preco, quant);
-        lista.add(p);
+            Produto p = new Produto(nome, preco, quant);
+            lista.add(p);
 
-        System.out.println("deseja cadastrar outro produto?");
+            System.out.println("Deseja cadastrar outro produto? (S para sim, qualquer outra tecla para não)");
+            controle = leia.next().charAt(0);
 
-        controle = leia.next().charAt(0);
+        } while (controle == 'S' || controle == 's');
 
-    } while (controle == 'S' || controle == 's');
-        for (Produto i : lista){
-            System.out.println(i);
+        for (Produto produto : lista) {
+            System.out.println(produto);
         }
-            
-        }
+
+        leia.close(); // Feche o Scanner quando não precisar mais dele.
     }
-    
+}

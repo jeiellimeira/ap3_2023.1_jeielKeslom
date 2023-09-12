@@ -8,11 +8,9 @@ public class TestaAluno {
         umAluno.setNotaUnidade1(-1);
         umAluno.setNotaUnidade2(-1);
         umAluno.setNotaUnidade3(-1);
-        
+
         System.out.println(umAluno.getMedia());
         System.out.println(umAluno);
-
-
 
     }
 }

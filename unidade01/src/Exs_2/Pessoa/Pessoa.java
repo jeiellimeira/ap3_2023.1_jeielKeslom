@@ -1,21 +1,23 @@
 package exAula2;
-public class Pessoa {
-   String nome;
-   int idade;
-   float altura;
-  // 10104235940
-   public Pessoa(String nome, int idade, float altura) {
-      this.nome = nome;
-      this.idade = idade;
-      this.altura = altura;
-   }
-   
-   @Override
-   public String toString() {
-      return "nome: " + nome + " idade: " + idade + " altura: " + altura;
-   }
 
- public void fazerAniversario() {
+public class Pessoa {
+    String nome;
+    int idade;
+    float altura;
+
+    // 10104235940
+    public Pessoa(String nome, int idade, float altura) {
+        this.nome = nome;
+        this.idade = idade;
+        this.altura = altura;
+    }
+
+    @Override
+    public String toString() {
+        return "nome: " + nome + " idade: " + idade + " altura: " + altura;
+    }
+
+    public void fazerAniversario() {
         idade++;
         System.out.println("Feliz aniversário! Agora você tem " + idade + " anos.");
     }
@@ -37,5 +39,4 @@ public class Pessoa {
             System.out.println("Essa pessoa não é maior de idade.");
         }
     }
-   }
-   
+}
